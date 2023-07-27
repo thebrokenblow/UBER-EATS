@@ -1,37 +1,51 @@
 <template>
   <header-uber-eats />
   <main class="main-container">
-    <input-restaurant class="mt-5" />
+    <input
+      type="text"
+      v-model="restaurant"
+      class="some-input input-restaurant"
+      placeholder="Поиск по ресторанам и кухням"
+      style=""
+    />
     <h1 class="name-list-restaurant">Рестораны в Москве</h1>
     <div class="d-flex flex-wrap row">
       <restaurant-item
-        v-for="restaurant in restaurants"
+        v-for="restaurant in filterRestaurant"
         :key="restaurant"
         :restaurant="restaurant"
         class="col-lg-4 col-md-6 col-12 mt-4"
       />
     </div>
   </main>
-  <footer-uber-eats class="footer-uber-eats"/>
+  <footer-uber-eats class="footer-uber-eats" />
 </template>
 
 <script>
 import headerUberEats from "./components/index-components/header-uber-eats";
-import inputRestaurant from "./components/index-components/input-restaurant.vue";
 import restaurantItem from "./components/index-components/restaurant-item.vue";
 import footerUberEats from "./components/index-components/footer-uber-eats.vue";
 export default {
   components: {
     headerUberEats,
-    inputRestaurant,
     restaurantItem,
     footerUberEats,
   },
   data() {
     return {
       restaurants: [],
+      restaurant: "",
     };
   },
+
+  computed: {
+    filterRestaurant() {
+      return this.restaurants.filter((restaurant) =>
+        restaurant.name.includes(this.restaurant)
+      );
+    },
+  },
+
   created() {
     var jsonData = {
       //здесь будет запрос на сервер (получить json)
@@ -108,6 +122,16 @@ export default {
 
 <style>
 @import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;600&family=Roboto&display=swap");
+
+.input-restaurant {
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid black;
+  background-color: transparent;
+  color: inherit;
+  outline: none;
+  margin-top: 55px;
+}
 
 .name-list-restaurant {
   margin-top: 55px;
