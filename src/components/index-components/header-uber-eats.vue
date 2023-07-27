@@ -24,11 +24,11 @@
 }
 
 .logo-header {
-  padding-left: 40px;
+  padding-left: 80px;
 }
 
 .basket-header {
-  margin-right: 40px;
+  padding-right: 80px;
 }
 
 .basket {
