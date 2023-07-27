@@ -1,25 +1,31 @@
 <template>
   <div>
-    <div class="card-restaurant-container">
-      <img
-        src="./svg/1.svg"
-        class="card-img-top"
-        alt="Макдоналдс — Газетный"
-      />
-      <div class="card-restaurant-description">
-        <div class="name-restaurant">Макдоналдс — Газетный</div>
-        <div class="cost-BaseProducts-restaurant">₽₽ • Бургеры</div>
-        <div class="cooking-time-restaurant">25 - 35 мин</div>
+    <img :src="restaurant.urlImg" class="card-img-top" :alt="restaurant.name" />
+    <div class="card-restaurant-description">
+      <div class="name-restaurant">{{ restaurant.name }}</div>
+      <div class="cost-BaseProducts-restaurant">
+        {{ restaurant.costBaseProducts }}
+      </div>
+      <div class="cooking-time-restaurant">
+        {{ restaurant.cookingTime }}
       </div>
     </div>
   </div>
 </template>
 
-<style>
-.card-restaurant-container {
-  margin-top: 20px;
-}
+<script>
+export default {
+  props: {
+    restaurant: {
+      type: Object,
+      required: true,
+      default: null,
+    },
+  },
+};
+</script>
 
+<style>
 .card-restaurant-description {
   margin-top: 15px;
   font-family: Roboto;
