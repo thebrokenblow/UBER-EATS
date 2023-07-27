@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="vendor/js/jquery-3.3.1.slim.min.js" defer></script>
+    <script src="vendor/js/popper.min.js" async></script>
+    <link rel="stylesheet" href="vendor/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="/styles/navbar.css" />
+    <script src="vendor/js/bootstrap.min.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,300&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/styles/restaurant-page/navbar-category.css" />
+    <link rel="stylesheet" href="/styles/restaurant-page/hero-restaurant.css" />
+    <link rel="stylesheet" href="/styles/restaurant-page/list-product.css" />
+    <link rel="stylesheet" href="/styles/header.css" />
+    <title>Ресторан</title>
+  </head>
+  <body>
+    <nav class="navbar header">
+      <a class="navbar-brand logo-header" href="#">
+        <img src="/svg/logo.svg" alt="uber eats" />
+      </a>
+      <div>
+        <form class="d-flex justify-content-end">
+          <button type="button" class="btn btn-outline-dark button-nav">
+            Войти
+          </button>
+          <a class="navbar-brand basket-header" href="#">
+            <img class="basket" src="/svg/basket.svg" alt="basket" />
+          </a>
+        </form>
+      </div>
+    </nav>
+    <section class="hero-restaurant">
+      <div class="information-hero-restaurant">
+        <div class="hero-container-restaurant">
+          <h1 class="name-restaurant">Трактир «Пушкин»</h1>
+          <div class="container-const-country-kitchen">
+            <div class="const-country-kitchen">
+              <span>₽₽₽</span> • <span>Европейска</span>
+            </div>
+            <div>
+              <button class="button-hero btn" type="button">40 - 50 мин</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <nav class="navbar navbar-category">
+      <div class="d-flex flex-wrap">
+        <a class="nav-link category-item select-category-item" href="/"
+          >Закуски</a
+        >
+        <a class="nav-link category-item" href="/">Салаты</a>
+        <a class="nav-link category-item" href="/">Супы</a>
+        <a class="nav-link category-item" href="/">Горячие блюда</a>
+        <a class="nav-link category-item" href="/">Гарниры</a>
+        <a class="nav-link category-item" href="/">Десерты</a>
+      </div>
+    </nav>
+    <div class="list-product">
+      <h1 class="name-category">Закуски</h1>
+      <div class="list-product-container">
+        <div class="d-flex flex-wrap justify-content-between">
+          <div
+            class="product-item d-flex justify-content-between col-12 col-md-12 col-lg-12 col-xl-5"
+          >
+            <div
+              class="product-item-container d-flex flex-column justify-content-between"
+            >
+              <div>
+                <h3 class="name-product">Сельдь на бородинском хлебе</h3>
+                <h5 class="composition-product">С яйцом и огурцом</h5>
+              </div>
+              <div class="cost-product">240 ₽</div>
+            </div>
+            <div>
+              <img
+                class="img-product"
+                src="/images/herring-on-borodino-bread.png"
+                alt="Сельдь на бородинском хлебе"
+              />
+            </div>
+          </div>
+          <div
+            class="product-item d-flex justify-content-between col-12 col-md-12 col-lg-12 col-xl-5"
+          >
+            <div
+              class="product-item-container d-flex flex-column justify-content-between"
+            >
+              <div>
+                <h3 class="name-product">Соленья ассорти</h3>
+              </div>
+              <div class="cost-product">320 ₽</div>
+            </div>
+            <div>
+              <img
+                class="img-product"
+                src="/images/assorted-pickles.png"
+                alt="Соленья ассорти"
+              />
+            </div>
+          </div>
+          <div
+            class="product-item d-flex justify-content-between col-12 col-md-12 col-lg-12 col-xl-5"
+          >
+            <div
+              class="product-item-container d-flex flex-column justify-content-between"
+            >
+              <div>
+                <h3 class="name-product">Грибы маринованные</h3>
+              </div>
+              <div class="cost-product">300 ₽</div>
+            </div>
+            <div>
+              <img
+                class="img-product"
+                src="/images/marinated-mushrooms.png"
+                alt="Соленья ассорти"
+              />
+            </div>
+          </div>
+          <div
+            class="product-item d-flex justify-content-between col-12 col-md-12 col-lg-12 col-xl-5"
+          >
+            <div
+              class="product-item-container d-flex flex-column justify-content-between"
+            >
+              <div>
+                <h3 class="name-product">Сало домашнее с горчицей</h3>
+              </div>
+              <div class="cost-product">320 ₽</div>
+            </div>
+            <div>
+              <img
+                class="img-product"
+                src="/images/salo-homemade-with-mustard.png"
+                alt="Соленья ассорти"
+              />
+            </div>
+          </div>
+          <div
+            class="product-item d-flex justify-content-between col-12 col-md-12 col-lg-12 col-xl-5"
+          >
+            <div
+              class="product-item-container d-flex flex-column justify-content-between"
+            >
+              <div>
+                <h3 class="name-product">Малосольная семга</h3>
+              </div>
+              <div class="cost-product">390 ₽</div>
+            </div>
+            <div>
+              <img
+                class="img-product"
+                src="/images/salted-salmon.png"
+                alt="Соленья ассорти"
+              />
+            </div>
+          </div>
+          <div
+            class="product-item d-flex justify-content-between col-12 col-md-12 col-lg-12 col-xl-5"
+          >
+            <div
+              class="product-item-container d-flex flex-column justify-content-between"
+            >
+              <div>
+                <h3 class="name-product">Язык говяжий с хреном</h3>
+              </div>
+              <div class="cost-product">350 ₽</div>
+            </div>
+            <div>
+              <img
+                class="img-product"
+                src="/images/beef-tongue-with-horseradish.png"
+                alt="Соленья ассорти"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div style="background: #262626">
+      <footer style="margin-left: 60px; margin-right: 60px">
+        <div style="padding-top: 55px">
+          <img src="/svg/white-logo.svg" alt="" />
+        </div>
+        <div class="border-top" style="margin-top: 40px">
+          <div class="d-flex justify-content-start row">
+            <div style="margin-top: 33px" class="col-lg-3 col-md-4 col-12">
+              <div class="dropdown">
+                <button
+                  class="btn btn-secondary dropdown-toggle"
+                  type="button"
+                  style="background-color: #3b3b3b; width: 100%"
+                  id="dropdownMenuButton1"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Русский
+                </button>
+              </div>
+              <div style="margin-top: 33px">
+                <span style="color: #49a144">#</span
+                ><span class="text-light">UberEats</span>
+              </div>
+
+              <div class="d-flex" style="margin-top: 17px">
+                <img
+                  style="height: 34px; width: 34px"
+                  src="/svg/icon/facebook.svg"
+                  alt=""
+                />
+                <img
+                  style="height: 34px; width: 34px; margin-left: 12px"
+                  src="/svg/icon/twitter.svg"
+                  alt=""
+                />
+                <img
+                  style="height: 34px; width: 34px; margin-left: 12px"
+                  src="/svg/icon/instagram.svg"
+                  alt=""
+                />
+              </div>
+            </div>
+            <div style="margin-top: 33px" class="col-lg-3 col-md-4 col-12">
+              <ul class="p-0" style="list-style: none; cursor: pointer">
+                <li class="my-2">
+                  <a class="text-light text-decoration-none" href="/"
+                    >Об UberEats</a
+                  >
+                </li>
+                <li class="my-2">
+                  <a class="text-light text-decoration-none" href="/"
+                    >Станьте партнёром по доставке</a
+                  >
+                </li>
+                <li class="my-2">
+                  <a class="text-light text-decoration-none" href="/"
+                    >Станьте парнёром-рестораном</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <div style="margin-top: 33px" class="col-lg-2 col-md-2 col-12">
+              <ul class="p-0" style="list-style: none; cursor: pointer">
+                <li class="my-2">
+                  <a class="text-light text-decoration-none" href="/"
+                    >Все города</a
+                  >
+                </li>
+                <li class="my-2">
+                  <a class="text-light text-decoration-none" href="/">Цены</a>
+                </li>
+                <li class="my-2">
+                  <a class="text-light text-decoration-none" href="/">Помощь</a>
+                </li>
+                <li class="my-2">
+                  <a class="text-light text-decoration-none" href="/">FAQs</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="border-top border-bottom" style="margin-top: 55px">
+          <div
+            class="d-flex justify-content-center"
+            style="margin-top: 20px; margin-bottom: 20px"
+          >
+            <img
+              src="/svg/icon/App_Store.svg"
+              style="margin-right: 20px"
+              alt=""
+            />
+            <img
+              src="/svg/icon/Google_Play.svg"
+              style="margin-left: 20px"
+              alt=""
+            />
+          </div>
+        </div>
+        <div
+          class="d-flex flex-wrap justify-content-start"
+          style="padding-top: 40px; padding-bottom: 40px"
+        >
+          <p
+            class="col-lg-3 col-md-3 col-12"
+            style="color: white; padding-left: 30px"
+          >
+            © 2017 Uber Technologies Inc.
+          </p>
+          <p
+            class="col-lg-3 col-md-3 col-12"
+            style="color: white; padding-left: 30px"
+          >
+            Обработка персональных данных
+          </p>
+          <p
+            class="col-lg-3 col-md-3 col-12"
+            style="color: white; padding-left: 30px"
+          >
+            Пользовательское соглашение
+          </p>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>

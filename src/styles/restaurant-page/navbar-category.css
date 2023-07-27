@@ -1,0 +1,42 @@
+.navbar-category {
+  padding-left: 80px;
+  height: 80px;
+  border-bottom: 2px solid rgba(117, 117, 117, 0.2);
+}
+
+@media (max-width: 991px) {
+  .navbar-category {
+    padding-left: 8px;
+    visibility: visible;
+  }
+}
+
+@media (max-width: 767px) {
+  .navbar-category {
+    visibility: hidden;
+  }
+}
+
+.category-item {
+  margin-right: 40px;
+  color: #626262;
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.select-category-item {
+  color: #327430;
+}
+
+.hero-container-restaurant {
+  display: flex;
+  flex-direction: column;
+}
+
+.container-const-country-kitchen {
+  margin-top: 55px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}

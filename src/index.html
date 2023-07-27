@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="vendor/js/jquery-3.3.1.slim.min.js" defer></script>
+    <script src="vendor/js/popper.min.js" async></script>
+    <link rel="stylesheet" href="vendor/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="/styles/header.css" />
+    <script src="vendor/js/bootstrap.min.js" defer></script>
+    <title>UBER EATS</title>
+  </head>
+  <body>
+    <nav class="navbar shadow-sm p-3 mb-5 bg-body rounded header">
+      <div class="container-fluid">
+        <a class="navbar-brand logo-header" href="#">
+          <img src="/svg/logo.svg" alt="uber eats" />
+        </a>
+        <form class="d-flex justify-content-end">
+          <button type="button" class="btn btn-outline-dark button-nav">
+            Войти
+          </button>
+          <a class="navbar-brand basket-header" href="#">
+            <img class="basket" src="/svg/basket.svg" alt="basket" />
+          </a>
+        </form>
+      </div>
+    </nav>
+    <div style="margin-left: 60px; margin-right: 60px">
+      <input
+        type="text"
+        class="some-input"
+        placeholder="Поиск по ресторанам и кухням"
+        style="
+          width: 100%;
+          border: none;
+          border-bottom: 1px solid black;
+          background-color: transparent;
+          color: inherit;
+          outline: none;
+        "
+      />
+
+      <h3 style="margin-top: 55px; font-weight: 400">Рестораны в Москве</h3>
+
+      <div class="d-flex flex-wrap justify-content-between row">
+        <div
+          class="card col-lg-4 col-md-6 col-12"
+          style="border: none; padding-top: 20px"
+        >
+          <img
+            src="/svg/restaurants/Макдоналдс — Газетный.svg"
+            class="card-img-top"
+            alt="Макдоналдс — Газетный"
+          />
+          <div class="card-body">
+            <p class="card-text">Макдоналдс — Газетный</p>
+            <p class="card-text" style="color: #626262">₽₽ • Бургеры</p>
+            <p class="card-text">25 - 35 мин</p>
+          </div>
+        </div>
+        <div
+          class="card col-lg-4 col-md-6 col-12"
+          style="border: none; padding-top: 20px"
+        >
+          <img
+            src="/svg/restaurants/DimSum & Co — ЦДМ.svg"
+            class="card-img-top"
+            alt="DimSum & Co — ЦДМ"
+          />
+          <div class="card-body">
+            <p class="card-text">DimSum & Co — ЦДМ</p>
+            <p class="card-text" style="color: #626262">
+              ₽ • Японская • Китайская • Азиатская
+            </p>
+            <p class="card-text">40 - 50 мин</p>
+          </div>
+        </div>
+        <div
+          class="card col-lg-4 col-md-6 col-12"
+          style="border: none; padding-top: 20px"
+        >
+          <img
+            src="/svg/restaurants/ДвижОК — Манежная.svg"
+            class="card-img-top"
+            alt="ДвижОК — Манежная"
+          />
+          <div class="card-body">
+            <p class="card-text">ДвижОК — Манежная</p>
+            <p class="card-text" style="color: #626262">
+              ₽ • Американская • Европейская
+            </p>
+            <p class="card-text">35 - 45 мин</p>
+          </div>
+        </div>
+        <div
+          class="card col-lg-4 col-md-6 col-12"
+          style="border: none; padding-top: 20px"
+        >
+          <img
+            src="/svg/restaurants/НЯ — NHA.svg"
+            class="card-img-top"
+            alt="НЯ — NHA"
+          />
+          <div class="card-body">
+            <p class="card-text">НЯ — NHA</p>
+            <p class="card-text" style="color: #626262">₽₽ • Вьетнамская</p>
+            <p class="card-text">30 - 40 мин</p>
+          </div>
+        </div>
+        <div
+          class="card col-lg-4 col-md-6 col-12"
+          style="border: none; padding-top: 20px"
+        >
+          <img
+            src="/svg/restaurants/Точка Дзы — Цветной.svg"
+            class="card-img-top"
+            alt="..."
+          />
+          <div class="card-body">
+            <p class="card-text">Точка Дзы — Цветной</p>
+            <p class="card-text" style="color: #626262">₽₽ • Вьетнамская</p>
+            <p class="card-text">40 - 50 мин</p>
+          </div>
+        </div>
+        <div
+          class="card col-lg-4 col-md-6 col-12"
+          style="border: none; padding-top: 20px"
+        >
+          <img
+            src="/svg/restaurants/Cinnabon.svg"
+            class="card-img-top"
+            alt="Cinnabon"
+          />
+          <div class="card-body">
+            <p class="card-text">Cinnabon</p>
+            <p class="card-text" style="color: #626262">
+              ₽ • Выпечка • Десерты • Капкейки
+            </p>
+            <p class="card-text">25 - 35 мин</p>
+          </div>
+        </div>
+        <div
+          class="card col-lg-4 col-md-6 col-12"
+          style="border: none; padding-top: 20px"
+        >
+          <img
+            src="/svg/restaurants/PIZZELOVE.svg"
+            class="card-img-top"
+            alt="PIZZELOVE"
+          />
+          <div class="card-body">
+            <p class="card-text">PIZZELOVE</p>
+            <p class="card-text" style="color: #626262">₽₽ • Пицца</p>
+            <p class="card-text">15 - 25 мин</p>
+          </div>
+        </div>
+        <div
+          class="card col-lg-4 col-md-6 col-12"
+          style="border: none; padding-top: 20px"
+        >
+          <img
+            src="/svg/restaurants/Zю кафе — Тверская.svg"
+            class="card-img-top"
+            alt="Zю кафе — Тверская"
+          />
+          <div class="card-body">
+            <p class="card-text">Zю кафе — Тверская</p>
+            <p class="card-text" style="color: #626262">₽₽ • Японская</p>
+            <p class="card-text">25 - 35 мин</p>
+          </div>
+        </div>
+        <div
+          class="card col-lg-4 col-md-6 col-12"
+          style="border: none; padding-top: 20px"
+        >
+          <img
+            src="/svg/restaurants/Bar BQ Cafe — Манежная.svg"
+            class="card-img-top"
+            alt="..."
+          />
+          <div class="card-body">
+            <p class="card-text">Bar BQ Cafe — Манежнаяй</p>
+            <p class="card-text" style="color: #626262">₽₽₽ • Европейская</p>
+            <p class="card-text">30 - 40 мин</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div style="background: #262626">
+      <footer style="margin-left: 60px; margin-right: 60px">
+        <div style="padding-top: 55px">
+          <img src="/svg/white-logo.svg" alt="" />
+        </div>
+        <div class="border-top" style="margin-top: 40px">
+          <div class="d-flex justify-content-start row">
+            <div style="margin-top: 33px" class="col-lg-3 col-md-4 col-12">
+              <div class="dropdown">
+                <button
+                  class="btn btn-secondary dropdown-toggle"
+                  type="button"
+                  style="background-color: #3b3b3b; width: 100%"
+                  id="dropdownMenuButton1"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Русский
+                </button>
+              </div>
+              <div style="margin-top: 33px">
+                <span style="color: #49a144">#</span
+                ><span class="text-light">UberEats</span>
+              </div>
+
+              <div class="d-flex" style="margin-top: 17px">
+                <img
+                  style="height: 34px; width: 34px"
+                  src="/svg/icon/facebook.svg"
+                  alt=""
+                />
+                <img
+                  style="height: 34px; width: 34px; margin-left: 12px"
+                  src="/svg/icon/twitter.svg"
+                  alt=""
+                />
+                <img
+                  style="height: 34px; width: 34px; margin-left: 12px"
+                  src="/svg/icon/instagram.svg"
+                  alt=""
+                />
+              </div>
+            </div>
+            <div style="margin-top: 33px" class="col-lg-3 col-md-4 col-12">
+              <ul class="p-0" style="list-style: none; cursor: pointer">
+                <li class="my-2">
+                  <a class="text-light text-decoration-none" href="/"
+                    >Об UberEats</a
+                  >
+                </li>
+                <li class="my-2">
+                  <a class="text-light text-decoration-none" href="/"
+                    >Станьте партнёром по доставке</a
+                  >
+                </li>
+                <li class="my-2">
+                  <a class="text-light text-decoration-none" href="/"
+                    >Станьте парнёром-рестораном</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <div style="margin-top: 33px" class="col-lg-2 col-md-2 col-12">
+              <ul class="p-0" style="list-style: none; cursor: pointer">
+                <li class="my-2">
+                  <a class="text-light text-decoration-none" href="/"
+                    >Все города</a
+                  >
+                </li>
+                <li class="my-2">
+                  <a class="text-light text-decoration-none" href="/">Цены</a>
+                </li>
+                <li class="my-2">
+                  <a class="text-light text-decoration-none" href="/">Помощь</a>
+                </li>
+                <li class="my-2">
+                  <a class="text-light text-decoration-none" href="/">FAQs</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="border-top border-bottom" style="margin-top: 55px">
+          <div
+            class="d-flex justify-content-center"
+            style="margin-top: 20px; margin-bottom: 20px"
+          >
+            <img
+              src="/svg/icon/App_Store.svg"
+              style="margin-right: 20px"
+              alt=""
+            />
+            <img
+              src="/svg/icon/Google_Play.svg"
+              style="margin-left: 20px"
+              alt=""
+            />
+          </div>
+        </div>
+        <div
+          class="d-flex flex-wrap justify-content-start"
+          style="padding-top: 40px; padding-bottom: 40px"
+        >
+          <p
+            class="col-lg-3 col-md-3 col-12"
+            style="color: white; padding-left: 30px"
+          >
+            © 2017 Uber Technologies Inc.
+          </p>
+          <p
+            class="col-lg-3 col-md-3 col-12"
+            style="color: white; padding-left: 30px"
+          >
+            Обработка персональных данных
+          </p>
+          <p
+            class="col-lg-3 col-md-3 col-12"
+            style="color: white; padding-left: 30px"
+          >
+            Пользовательское соглашение
+          </p>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
