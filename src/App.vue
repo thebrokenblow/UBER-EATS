@@ -1,27 +1,30 @@
 <template>
-  <header-uber-eats />
-  <main class="main-container">
-    <input
-      type="text"
-      v-model="restaurant"
-      class="some-input input-restaurant"
-      placeholder="Поиск по ресторанам и кухням"
-      style=""
-    />
-    <h1 class="name-list-restaurant">Рестораны в Москве</h1>
-    <h3 v-if="filterRestaurant.length === 0">
-      К сожалению не нашли ресторан, который вы искали
-    </h3>
-    <div class="d-flex flex-wrap row">
-      <restaurant-item
-        v-for="restaurant in filterRestaurant"
-        :key="restaurant"
-        :restaurant="restaurant"
-        class="col-lg-4 col-md-6 col-12 mt-4"
-      />
-    </div>
-  </main>
-  <footer-uber-eats class="footer-uber-eats" />
+  <section class="main-section">
+    <header-uber-eats />
+    <main class="main-container">
+      <input
+        type="text"
+        v-model="restaurant"
+        class="some-input input-restaurant"
+        placeholder="Поиск по ресторанам и кухням" />
+
+      <h1 class="name-list-restaurant">Рестораны в Москве</h1>
+      
+      <h3 v-if="filterRestaurant.length === 0">
+        К сожалению не нашли ресторан, который вы искали
+      </h3>
+      
+      <div class="d-flex flex-wrap row">
+        <restaurant-item
+          v-for="restaurant in filterRestaurant"
+          :key="restaurant"
+          :restaurant="restaurant"
+          class="col-lg-4 col-md-6 col-12 mt-4" />
+      </div>
+      
+    </main>
+    <footer-uber-eats style="flex-shrink: 0" class="footer-uber-eats" />
+  </section>
 </template>
 
 <script>
@@ -126,6 +129,13 @@ export default {
 <style>
 @import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;600&family=Roboto&display=swap");
 
+.main-section {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
 .input-restaurant {
   width: 100%;
   border: none;
@@ -146,18 +156,10 @@ export default {
   line-height: 34px;
 }
 
-@media (min-width: 1199px) {
-  .main-container {
-    margin-left: 80px;
-    margin-right: 80px;
-  }
-}
-
-@media (max-width: 1199px) {
-  .main-container {
-    margin-left: 8px;
-    margin-right: 8px;
-  }
+.main-container {
+  margin-left: 80px;
+  margin-right: 80px;
+  flex-grow: 1;
 }
 
 .card-restaurant-container {

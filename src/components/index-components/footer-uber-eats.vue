@@ -5,7 +5,7 @@
         <img src="./svg/uber-eats-logo2.svg" alt="uber eats" />
       </div>
       <div class="footer-contacts-section border-top border-bottom">
-        <div class="d-flex footer-contacts-container">
+        <section class="d-flex footer-contacts-container row">
           <div class="col-lg-3 col-md-4 col-12">
             <div class="dropdown">
               <button
@@ -46,8 +46,10 @@
               </a>
             </div>
           </div>
-          <div class="link-footer-container col-lg-3 col-md-4 col-12">
-            <ul class="list-link-footer">
+          <div class="col-lg-3 col-md-4 col-12 row">
+            <ul
+              class="contacts-section second-contacts-section list-link-footer"
+            >
               <li>
                 <a class="text-light text-decoration-none" href="/"
                   >Об UberEats</a
@@ -65,7 +67,7 @@
               </li>
             </ul>
           </div>
-          <div class="link-footer-container col-lg-3 col-md-4 col-12">
+          <div class="col-lg-3 col-md-4 col-12 row">
             <ul class="list-link-footer">
               <li>
                 <a class="text-light text-decoration-none" href="/"
@@ -83,50 +85,31 @@
               </li>
             </ul>
           </div>
-        </div>
+        </section>
       </div>
-      <div class="d-flex justify-content-center app-container">
+      <section class="d-flex justify-content-center app-container">
         <a href="/">
           <img src="./svg/icon/App_Store.svg" alt="App Store" />
         </a>
         <a class="google-play-logo" href="/">
           <img src="./svg/icon/Google_Play.svg" alt="Google Play" />
         </a>
-      </div>
-      <div
-        class="d-flex justify-content-between border-top user-footer-container"
+      </section>
+      <section
+        class="d-flex justify-content-between border-top user-footer-container row"
       >
-        <span class="col-lg-3 col-md-3 col-12 text-user-footer">
-          © 2017 Uber Technologies Inc.
-        </span>
-        <span class="col-lg-3 col-md-3 col-12 text-user-footer">
-          Обработка персональных данных
-        </span>
-        <span class="col-lg-3 col-md-3 col-12 text-user-footer">
-          Пользовательское соглашение
-        </span>
-
-        <a href="#" class="button-to-up">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="80"
-            height="80"
-            viewBox="0 0 80 80"
-            fill="none"
-          >
-            <path
-              fill-rule="evenodd"
-              clip-rule="evenodd"
-              d="M0 2C0 0.895429 0.895431 0 2 0H78C79.1046 0 80 0.895431 80 2V78C80 79.1046 79.1046 80 78 80H2C0.895429 80 0 79.1046 0 78V2Z"
-              fill="#59BD5A"
-            />
-            <path
-              d="M40.0183 27.0428L40.0527 27.0103L47.6741 34.2576L46.0754 35.7071L40.9286 30.8839V52H39.1428V30.8522L33.962 35.7071L32.3995 34.2576L40.0031 27.0103L40.0187 27.0428H40.0183Z"
-              fill="white"
-            />
-          </svg>
-        </a>
-      </div>
+        <a class="col-lg-3 col-md-3 col-3 text-user-footer" href="/"
+          >© 2017 Uber Technologies Inc.</a
+        >
+        <a class="col-lg-3 col-md-3 col-3 text-user-footer" href="/"
+          >Обработка персональных данных</a
+        >
+        <a
+          class="col-lg-3 col-md-3 col-3 text-user-footer"
+          href="/"
+          >Пользовательское соглашение</a
+        >
+      </section>
     </div>
   </footer>
 </template>
@@ -137,8 +120,8 @@
 }
 
 .footer-container {
-  margin-left: 60px;
-  margin-right: 60px;
+  margin-left: 80px;
+  margin-right: 80px;
 }
 
 .footer-logo {
@@ -167,6 +150,12 @@
 
 .hashtag-restaurant {
   color: #49a144;
+}
+
+@media (max-width: 767px) {
+  .contacts-section {
+    padding-top: 17px;
+  }
 }
 
 .social-networks-container {
@@ -221,11 +210,8 @@
   font-family: Roboto;
   font-size: 11px;
   font-weight: 400;
-}
-
-.button-to-up {
-  position: relative;
-  bottom: 50px;
-  left: 40px;
+  margin: 0px;
+  text-decoration: none;
+  display: inline-block;
 }
 </style>
