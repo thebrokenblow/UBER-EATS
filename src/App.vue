@@ -9,6 +9,9 @@
       style=""
     />
     <h1 class="name-list-restaurant">Рестораны в Москве</h1>
+    <h3 v-if="filterRestaurant.length === 0">
+      К сожалению не нашли ресторан, который вы искали
+    </h3>
     <div class="d-flex flex-wrap row">
       <restaurant-item
         v-for="restaurant in filterRestaurant"
