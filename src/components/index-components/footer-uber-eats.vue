@@ -67,7 +67,7 @@
               </li>
             </ul>
           </div>
-          <div class="col-lg-3 col-md-4 col-12 row">
+          <div class="col-lg-3 col-md-4 col-12 row last-contact-section">
             <ul class="list-link-footer">
               <li>
                 <a class="text-light text-decoration-none" href="/"
@@ -104,9 +104,7 @@
         <a class="col-lg-3 col-md-3 col-3 text-user-footer" href="/"
           >Обработка персональных данных</a
         >
-        <a
-          class="col-lg-3 col-md-3 col-3 text-user-footer"
-          href="/"
+        <a class="col-lg-3 col-md-3 col-3 text-user-footer" href="/"
           >Пользовательское соглашение</a
         >
       </section>
@@ -198,6 +196,12 @@
 
 .google-play-logo {
   margin-left: 40px;
+}
+
+@media (max-width: 767px) {
+  .last-contact-section {
+    padding-top: 5px;
+  }
 }
 
 .user-footer-container {

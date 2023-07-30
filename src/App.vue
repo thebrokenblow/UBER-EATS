@@ -6,22 +6,23 @@
         type="text"
         v-model="restaurant"
         class="some-input input-restaurant"
-        placeholder="Поиск по ресторанам и кухням" />
+        placeholder="Поиск по ресторанам и кухням"
+      />
 
       <h1 class="name-list-restaurant">Рестораны в Москве</h1>
-      
+
       <h3 v-if="filterRestaurant.length === 0">
         К сожалению не нашли ресторан, который вы искали
       </h3>
-      
+
       <div class="d-flex flex-wrap row">
         <restaurant-item
           v-for="restaurant in filterRestaurant"
           :key="restaurant"
           :restaurant="restaurant"
-          class="col-lg-4 col-md-6 col-12 mt-4" />
+          class="col-lg-4 col-md-6 col-12 mt-4"
+        />
       </div>
-      
     </main>
     <footer-uber-eats style="flex-shrink: 0" class="footer-uber-eats" />
   </section>
@@ -47,7 +48,7 @@ export default {
   computed: {
     filterRestaurant() {
       return this.restaurants.filter((restaurant) =>
-        restaurant.name.includes(this.restaurant)
+        restaurant.name.toLowerCase().includes(this.restaurant.toLowerCase())
       );
     },
   },
@@ -157,9 +158,20 @@ export default {
 }
 
 .main-container {
-  margin-left: 80px;
-  margin-right: 80px;
   flex-grow: 1;
+}
+
+@media (max-width: 991px) {
+  .main-container {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+@media (min-width: 991px) {
+  .main-container {
+    padding-left: 80px;
+    padding-right: 80px;
+  }
 }
 
 .card-restaurant-container {
