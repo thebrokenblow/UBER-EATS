@@ -117,9 +117,17 @@
   background: #262626;
 }
 
-.footer-container {
-  margin-left: 80px;
-  margin-right: 80px;
+@media (max-width: 991px) {
+  .footer-container {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+@media (min-width: 991px) {
+  .footer-container {
+    padding-left: 80px;
+    padding-right: 80px;
+  }
 }
 
 .footer-logo {
@@ -214,7 +222,6 @@
   font-family: Roboto;
   font-size: 11px;
   font-weight: 400;
-  margin: 0px;
   text-decoration: none;
   display: inline-block;
 }
